@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlanOps: The Modern Workforce OS for Healthcare</title>
+    <title>PlanOps: Automated Staff Rostering for Nigerian Hospitals</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -30,7 +30,7 @@
 </head>
 <body class="text-gray-800">
 
-    <header class="bg-white shadow-sm py-4 px-6 md:px-12 lg:px-24 flex justify-between items-center fixed w-full z-10">
+    <header class="bg-white shadow-sm py-4 px-6 md:px-12 lg:px-24 flex justify-between items-center sticky top-0 w-full z-10">
         <div class="flex items-center">
             <svg class="w-8 h-8 text-emerald-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
@@ -39,188 +39,180 @@
             <span class="text-2xl font-bold text-gray-900">PlanOps</span>
         </div>
         <nav class="hidden md:flex space-x-8">
-            <a href="#home" class="text-gray-600 hover:text-emerald-600 font-medium transition duration-300">Home</a>
-            <a href="#features" class="text-gray-600 hover:text-emerald-600 font-medium transition duration-300">Features</a>
+            <a href="#problem" class="text-gray-600 hover:text-emerald-600 font-medium transition duration-300">The Problem</a>
+            <a href="#solution" class="text-gray-600 hover:text-emerald-600 font-medium transition duration-300">How It Works</a>
             <a href="#benefits" class="text-gray-600 hover:text-emerald-600 font-medium transition duration-300">Benefits</a>
-            <a href="#impact" class="text-gray-600 hover:text-emerald-600 font-medium transition duration-300">Our Impact</a>
-            <a href="#contact" class="text-gray-600 hover:text-emerald-600 font-medium transition duration-300">Contact</a>
+            <a href="#pricing" class="text-gray-600 hover:text-emerald-600 font-medium transition duration-300">Pricing</a>
         </nav>
-        <button class="md:hidden text-gray-600 hover:text-emerald-600 focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-        </button>
+        <a href="#cta" class="hidden md:inline-block bg-emerald-600 text-white hover:bg-emerald-700 px-6 py-2 rounded-full font-semibold shadow-md transition duration-300 transform hover:scale-105">
+            Get a Free Trial
+        </a>
     </header>
 
-    <section id="home" class="relative bg-gradient-to-r from-emerald-700 to-green-600 text-white py-24 md:py-32 lg:py-40 overflow-hidden rounded-b-3xl">
-        <div class="container mx-auto px-6 md:px-12 lg:px-24 flex flex-col md:flex-row items-center justify-between relative z-10">
-            <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 drop-shadow-lg">
-                    PlanOps: The Workforce OS for Modern Healthcare
-                </h1>
-                <p class="text-lg md:text-xl lg:text-2xl mb-8 opacity-90">
-                    Centralize operations, automate rostering & scheduling, and optimize staffing to empower your team and transform patient care.
+    <main>
+        <section id="home" class="relative bg-gradient-to-r from-emerald-700 to-green-600 text-white pt-32 pb-24 md:pt-40 md:pb-32 lg:pt-48 lg:pb-40 overflow-hidden">
+            <div class="container mx-auto px-6 md:px-12 lg:px-24 flex flex-col md:flex-row items-center justify-between relative z-10">
+                <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 drop-shadow-lg">
+                        End Roster Headaches. Retain Your Best Staff.
+                    </h1>
+                    <p class="text-lg md:text-xl lg:text-2xl mb-8 opacity-90">
+                        Stop wasting days on Excel sheets and chaotic WhatsApp groups. PlanOps is the simple, fair, and automated staff roster built for Nigerian hospitals. Prevent burnout, cut overtime costs, and give your Head Nurse her time back.
+                    </p>
+                    <a href="https://forms.gle/Di9kfjV1unXrJeKR7" class="inline-block bg-white text-emerald-700 hover:bg-emerald-100 px-8 py-4 rounded-full text-lg font-semibold shadow-xl transition duration-300 transform hover:scale-105">
+                        Start a Free 30-Day Trial
+                    </a>
+                </div>
+                <div class="md:w-1/2 flex justify-center md:justify-end">
+                    <img src="https://placehold.co/600x400/34d399/ffffff?text=Simple+Roster+View" alt="Screenshot of PlanOps roster calendar" class="rounded-xl shadow-2xl border-4 border-white transform rotate-3 hover:rotate-0 transition duration-500 ease-in-out">
+                </div>
+            </div>
+            <div class="absolute top-0 left-0 w-full h-full">
+                <div class="absolute w-64 h-64 bg-emerald-500 rounded-full opacity-20 -top-20 -left-20 animate-pulse"></div>
+                <div class="absolute w-96 h-96 bg-green-500 rounded-full opacity-20 -bottom-40 -right-40 animate-pulse delay-200"></div>
+            </div>
+        </section>
+
+        <section id="problem" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6 md:px-12 lg:px-24">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900">Is This Your Hospital's Reality?</h2>
+                <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12">Manual scheduling isn't just slow. It's costing you time, money, and your best people.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                        <div class="text-red-500 mb-4 text-5xl flex justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-x"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="17" x2="22" y1="8" y2="13"/><line x1="22" x2="17" y1="8" y2="13"/></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3 text-center">Losing Staff to Burnout?</h3>
+                        <p class="text-gray-600 text-center">Unfair schedules with 5-6 consecutive 12-hour shifts are a top reason for staff turnover and the "Japa" syndrome. Your best nurses and doctors are leaving because they're exhausted.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                        <div class="text-red-500 mb-4 text-5xl flex justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock-10"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 8 10"/></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3 text-center">Hours Wasted on Admin?</h3>
+                        <p class="text-gray-600 text-center">Your Head Nurse spends days creating rosters instead of managing patient care. This is a costly waste of your most valuable clinical expertise, leading to errors and frustration.</p>
+                    </div>
+
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                        <div class="text-red-500 mb-4 text-5xl flex justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-messages-square"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3 text-center">Chaos from Last-Minute Changes?</h3>
+                        <p class="text-gray-600 text-center">Managing sick leave and shift swaps via endless phone calls and WhatsApp messages creates confusion and coverage gaps, adding immense stress for schedulers and staff.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="solution" class="py-16 md:py-24 bg-emerald-50">
+            <div class="container mx-auto px-6 md:px-12 lg:px-24">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">The Simple, Powerful Solution</h2>
+                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="lg:order-2">
+                        <img src="https://placehold.co/600x400/6ee7b7/ffffff?text=Easy+Shift+Assignment" alt="PlanOps Feature Illustration" class="rounded-xl shadow-xl border-4 border-white">
+                    </div>
+                    <div class="lg:order-1 space-y-8">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-emerald-600 p-3 rounded-full text-white shadow-md font-bold text-xl">1</div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-1">Build Fair Rosters in Minutes</h3>
+                                <p class="text-gray-600">Use our simple drag-and-drop calendar to assign shifts. PlanOps automatically flags rule violations, like too many consecutive shifts or not enough rest time, ensuring fairness and compliance.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-emerald-600 p-3 rounded-full text-white shadow-md font-bold text-xl">2</div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-1">Empower Your Staff</h3>
+                                <p class="text-gray-600">Staff can view their live, up-to-date schedules anytime on their phones. They can easily request leave or initiate shift swaps with colleagues directly in the app, pending one-click admin approval.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-emerald-600 p-3 rounded-full text-white shadow-md font-bold text-xl">3</div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-1">Works Even with Bad Internet</h3>
+                                <p class="text-gray-600">Built as an offline-first Progressive Web App (PWA), PlanOps works seamlessly during power outages or when internet connectivity is poor. Data syncs automatically when a connection is restored.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6 md:px-12 lg:px-24 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">The Clear ROI for Your Hospital</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-12">PlanOps pays for itself by solving your most expensive operational problems.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold text-emerald-600 mb-3">Cut Overtime Costs</h3>
+                        <p class="text-gray-600">Reduce reliance on expensive last-minute locums and unnecessary overtime pay by creating optimized, gap-free schedules from the start.</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold text-emerald-600 mb-3">Increase Staff Retention</h3>
+                        <p class="text-gray-600">A fair, transparent schedule is a powerful tool to improve morale and fight the burnout that's draining your best talent.</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold text-emerald-600 mb-3">Save Dozens of Hours</h3>
+                        <p class="text-gray-600">Give your Head Nurse and senior doctors back the hours they waste on scheduling so they can focus on what truly matters: patient care.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="py-16 md:py-24 bg-emerald-50">
+            <div class="container mx-auto px-6 md:px-12 lg:px-24 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Simple, Affordable Pricing</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-12">No per-user fees. No hidden charges. Just one simple monthly price for your entire facility, designed for the Nigerian market.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-emerald-300">
+                        <h3 class="text-xl font-semibold text-gray-500 mb-2">Small Clinic</h3>
+                        <p class="text-4xl font-bold text-gray-900 mb-2">₦10,000<span class="text-lg font-medium text-gray-500">/month</span></p>
+                        <p class="text-gray-600 mb-6">Up to 20 Staff</p>
+                        <ul class="text-left space-y-3 text-gray-600">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Automated Rostering</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Mobile Staff Access</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Leave & Swap Requests</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-2xl border-t-4 border-emerald-600 transform scale-105">
+                        <p class="text-emerald-600 font-semibold mb-2">MOST POPULAR</p>
+                        <h3 class="text-xl font-semibold text-gray-500 mb-2">Medium Hospital</h3>
+                        <p class="text-4xl font-bold text-gray-900 mb-2">₦25,000<span class="text-lg font-medium text-gray-500">/month</span></p>
+                        <p class="text-gray-600 mb-6">21 - 50 Staff</p>
+                        <ul class="text-left space-y-3 text-gray-600">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>All Small Clinic Features</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Advanced Rule-Setting</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Basic Reporting</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-emerald-300">
+                        <h3 class="text-xl font-semibold text-gray-500 mb-2">Large Facility</h3>
+                        <p class="text-4xl font-bold text-gray-900 mb-2">₦50,000<span class="text-lg font-medium text-gray-500">/month</span></p>
+                        <p class="text-gray-600 mb-6">51+ Staff</p>
+                        <ul class="text-left space-y-3 text-gray-600">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>All Medium Hospital Features</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Priority Support</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Onboarding Assistance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="bg-gradient-to-r from-emerald-600 to-green-500 text-white py-16 md:py-20 text-center">
+            <div class="container mx-auto px-6 md:px-12 lg:px-24">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Bring Calm and Efficiency to Your Hospital?</h2>
+                <p class="text-lg md:text-xl mb-8 opacity-90">
+                    Start your free 30-day trial today. No credit card required. No obligation.
                 </p>
                 <a href="https://forms.gle/Di9kfjV1unXrJeKR7" class="inline-block bg-white text-emerald-700 hover:bg-emerald-100 px-8 py-4 rounded-full text-lg font-semibold shadow-xl transition duration-300 transform hover:scale-105">
-                    Join Waitlist
+                    Claim Your Free Trial
                 </a>
             </div>
-            <div class="md:w-1/2 flex justify-center md:justify-end">
-                <img src="https://placehold.co/600x400/34d399/ffffff?text=PlanOps" alt="Workforce Operating System" class="rounded-xl shadow-2xl border-4 border-white transform rotate-3 hover:rotate-0 transition duration-500 ease-in-out">
-            </div>
-        </div>
-        <div class="absolute top-0 left-0 w-full h-full">
-            <div class="absolute w-64 h-64 bg-emerald-500 rounded-full opacity-20 -top-20 -left-20 animate-pulse"></div>
-            <div class="absolute w-96 h-96 bg-green-500 rounded-full opacity-20 -bottom-40 -right-40 animate-pulse delay-200"></div>
-        </div>
-    </section>
-
-    <section id="features" class="py-16 md:py-24 bg-white">
-        <div class="container mx-auto px-6 md:px-12 lg:px-24">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Comprehensive Workforce Management Capabilities</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
-                    <div class="text-emerald-600 mb-4 text-5xl flex justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-check">
-                            <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
-                            <line x1="16" x2="16" y1="2" y2="6"/>
-                            <line x1="8" x2="8" y1="2" y2="6"/>
-                            <line x1="3" x2="21" y1="10" y2="10"/>
-                            <path d="m9 16 2 2 4-4"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3 text-center">Automated Rostering & Scheduling</h3>
-                    <p class="text-gray-600 text-center">Intelligent algorithms create optimal staff rosters and shift plans, reducing manual effort and errors.</p>
-                </div>
-                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
-                    <div class="text-emerald-600 mb-4 text-5xl flex justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-plus">
-                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-                            <circle cx="9" cy="7" r="4"/>
-                            <line x1="19" x2="19" y1="8" y2="14"/>
-                            <line x1="22" x2="16" y1="11" y2="11"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3 text-center">Seamless Staff Onboarding</h3>
-                    <p class="text-gray-600 text-center">Streamline new hire integration with automated workflows and essential resource access.</p>
-                </div>
-                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
-                    <div class="text-emerald-600 mb-4 text-5xl flex justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send-to-back">
-                            <rect width="16" height="16" x="3" y="3" rx="2"/>
-                            <path d="M17 7h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-4"/>
-                            <path d="M17 14v4a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2v-4"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3 text-center">Integrated Leave System</h3>
-                    <p class="text-gray-600 text-center">Manage time-off requests, approvals, and balances efficiently from one platform.</p>
-                </div>
-                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
-                    <div class="text-emerald-600 mb-4 text-5xl flex justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-smile">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
-                            <line x1="9" x2="9.01" y1="9" y2="9"/>
-                            <line x1="15" x2="15.01" y1="9" y2="9"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3 text-center">Happy Staff Index</h3>
-                    <p class="text-gray-600 text-center">Monitor staff sentiment and satisfaction to foster a thriving work environment.</p>
-                </div>
-                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
-                    <div class="text-emerald-600 mb-4 text-5xl flex justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-activity">
-                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3 text-center">WHO WISN Ratio Tracking</h3>
-                    <p class="text-gray-600 text-center">Utilize evidence-based workforce planning with WHO Workload Indicators of Staffing Need.</p>
-                </div>
-                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
-                    <div class="text-emerald-600 mb-4 text-5xl flex justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gauge">
-                            <path d="m12 14 4-4"/>
-                            <path d="M3.34 19.16a10 10 0 1 1 17.32 0"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3 text-center">Workload Balance Index</h3>
-                    <p class="text-gray-600 text-center">Ensure equitable distribution of tasks and responsibilities for optimal team performance.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="benefits" class="py-16 md:py-24 bg-emerald-50">
-        <div class="container mx-auto px-6 md:px-12 lg:px-24">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Transform Your Operations with PlanOps</h2>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="lg:order-2">
-                    <img src="https://placehold.co/600x400/6ee7b7/ffffff?text=Optimized+Workforce" alt="Benefits Illustration" class="rounded-xl shadow-xl border-4 border-white">
-                </div>
-                <div class="lg:order-1 space-y-8">
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0 bg-emerald-600 p-3 rounded-full text-white shadow-md">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up">
-                                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
-                                <polyline points="16 7 22 7 22 13"/>
-                            </svg>
-                        </div>
-                        <div class="ml-4">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-1">Boost Productivity & Efficiency</h3>
-                            <p class="text-gray-600">Optimize staffing levels to meet demand, reduce idle time, and maximize output across all shifts and roles.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0 bg-emerald-600 p-3 rounded-full text-white shadow-md">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign">
-                                <line x1="12" x2="12" y1="2" y2="22"/>
-                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-                            </svg>
-                        </div>
-                        <div class="ml-4">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-1">Significant Cost Savings</h3>
-                            <p class="text-gray-600">Optimize labor costs through efficient resource allocation and reduced administrative burden.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0 bg-emerald-600 p-3 rounded-full text-white shadow-md">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-handshake">
-                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5 5 0 0 0 17.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.78-2-4.5-2A5 5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
-                                <path d="M12 5H9.63a3 3 0 1 0-3.35 4.39"/>
-                                <path d="M13.5 16H11"/>
-                            </svg>
-                        </div>
-                        <div class="ml-4">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-1">Enhanced Staff Well-being & Retention</h3>
-                            <p class="text-gray-600">Fair, predictable rosters, streamlined leave, and workload balance lead to happier, more engaged teams.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="impact" class="py-16 md:py-24 bg-white">
-        <div class="container mx-auto px-6 md:px-12 lg:px-24 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Contributing to Global Health Goals</h2>
-            <p class="text-lg text-gray-600 max-w-4xl mx-auto mb-10">
-                PlanOps isn't just about efficiency; it's about building a sustainable future for healthcare. By optimizing staffing and providing deep insights into workforce distribution, PlanOps directly supports UN Sustainable Development Goal 3 (Ensure healthy lives and promote well-being for all at all ages), specifically indicator 3.c.1: Health worker density and distribution.** We empower organizations to ensure the right personnel are in the right place, at the right time, strengthening health systems globally.
-            </p>
-            <img src="https://placehold.co/800x450/10b981/ffffff?text=SDG+Target+3.c" alt="SDG Target 3.c" class="rounded-xl shadow-xl mx-auto border-4 border-gray-100">
-        </div>
-    </section>
-
-    <section class="bg-gradient-to-r from-emerald-600 to-green-500 text-white py-16 md:py-20 text-center rounded-t-3xl">
-        <div class="container mx-auto px-6 md:px-12 lg:px-24">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Workforce Management?</h2>
-            <p class="text-lg md:text-xl mb-8 opacity-90">
-                Join our waitlist to be among the first to experience unparalleled efficiency and strategic insight for your operations.
-            </p>
-            <a href="https://forms.gle/Di9kfjV1unXrJeKR7" class="inline-block bg-white text-emerald-700 hover:bg-emerald-100 px-8 py-4 rounded-full text-lg font-semibold shadow-xl transition duration-300 transform hover:scale-105">
-                Join Waitlist
-            </a>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer id="contact" class="bg-gray-800 text-gray-300 py-10 px-6 md:px-12 lg:px-24">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
@@ -241,7 +233,7 @@
                 </a>
                 <a href="https://x.com/getplanops" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">
                      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 300 300" aria-hidden="true">
-                        <path d="M178.57 127.15 290.27 0h-26.46l-97.03 110.38L89.34 0H0l117.13 166.94L0 300.25h26.46l102.4-116.59 81.8 116.59h89.34L178.57 127.15zm-20.74 22.88-11.45-16.4-94.4-135.2H82.4l75.3 107.76 11.45 16.4 98.7 141.25h-29.96l-79.6-113.84z"></path>
+                         <path d="M178.57 127.15 290.27 0h-26.46l-97.03 110.38L89.34 0H0l117.13 166.94L0 300.25h26.46l102.4-116.59 81.8 116.59h89.34L178.57 127.15zm-20.74 22.88-11.45-16.4-94.4-135.2H82.4l75.3 107.76 11.45 16.4 98.7 141.25h-29.96l-79.6-113.84z"></path>
                     </svg>
                 </a>
             </div>
